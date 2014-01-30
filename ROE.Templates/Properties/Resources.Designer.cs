@@ -83,6 +83,56 @@ namespace ROE.Templates.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap black_farward_button_md {
+            get {
+                object obj = ResourceManager.GetObject("black-farward-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_farward_button_md1 {
+            get {
+                object obj = ResourceManager.GetObject("black-farward-button-md1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_pause_button_md {
+            get {
+                object obj = ResourceManager.GetObject("black-pause-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_play_button_md {
+            get {
+                object obj = ResourceManager.GetObject("black-play-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_stop_button_md {
+            get {
+                object obj = ResourceManager.GetObject("black-stop-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blue_pause_button_md {
             get {
                 object obj = ResourceManager.GetObject("blue-pause-button-md", resourceCulture);
@@ -133,6 +183,26 @@ namespace ROE.Templates.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ButtonHelpB1_01 {
+            get {
+                object obj = ResourceManager.GetObject("ButtonHelpB1-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonHelpB1_On_01 {
+            get {
+                object obj = ResourceManager.GetObject("ButtonHelpB1_On-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forward_blue_button_md {
             get {
                 object obj = ResourceManager.GetObject("forward-blue-button-md", resourceCulture);
@@ -146,6 +216,56 @@ namespace ROE.Templates.Properties {
         internal static System.Drawing.Bitmap forward_red_button_md {
             get {
                 object obj = ResourceManager.GetObject("forward-red-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_backward_button_md {
+            get {
+                object obj = ResourceManager.GetObject("green-backward-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_forward_button_md {
+            get {
+                object obj = ResourceManager.GetObject("green-forward-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_pause_button_md {
+            get {
+                object obj = ResourceManager.GetObject("green-pause-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_play_button_md {
+            get {
+                object obj = ResourceManager.GetObject("green-play-button-md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_stop_button_md {
+            get {
+                object obj = ResourceManager.GetObject("green-stop-button-md", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
