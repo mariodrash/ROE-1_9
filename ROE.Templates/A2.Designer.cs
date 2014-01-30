@@ -28,36 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A2));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbSing = new System.Windows.Forms.Label();
             this.lbAlbum = new System.Windows.Forms.Label();
             this.lbSong = new System.Windows.Forms.Label();
+            this.picAlbum = new System.Windows.Forms.PictureBox();
             this.lbTopic = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbTop = new System.Windows.Forms.Label();
-            this.btnHelp = new System.Windows.Forms.PictureBox();
-            this.picAlbum = new System.Windows.Forms.PictureBox();
             this.btnBackward = new System.Windows.Forms.PictureBox();
             this.btnForward = new System.Windows.Forms.PictureBox();
             this.btnPause = new System.Windows.Forms.PictureBox();
             this.btnStop = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbTop = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.PictureBox();
+            this.BackwardForward = new System.Windows.Forms.Timer(this.components);
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBackward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -108,6 +110,15 @@
             this.lbSong.TabIndex = 1;
             this.lbSong.Text = "\"Song\"";
             // 
+            // picAlbum
+            // 
+            this.picAlbum.Location = new System.Drawing.Point(10, 23);
+            this.picAlbum.Name = "picAlbum";
+            this.picAlbum.Size = new System.Drawing.Size(136, 120);
+            this.picAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAlbum.TabIndex = 0;
+            this.picAlbum.TabStop = false;
+            // 
             // lbTopic
             // 
             this.lbTopic.AutoSize = true;
@@ -154,48 +165,6 @@
             this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
             this.axShockwaveFlash1.Size = new System.Drawing.Size(481, 311);
             this.axShockwaveFlash1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(62)))), ((int)(((byte)(50)))));
-            this.panel1.Controls.Add(this.lbTop);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1533, 31);
-            this.panel1.TabIndex = 146;
-            // 
-            // lbTop
-            // 
-            this.lbTop.AutoSize = true;
-            this.lbTop.BackColor = System.Drawing.Color.Transparent;
-            this.lbTop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTop.ForeColor = System.Drawing.Color.White;
-            this.lbTop.Location = new System.Drawing.Point(715, 2);
-            this.lbTop.Name = "lbTop";
-            this.lbTop.Size = new System.Drawing.Size(47, 21);
-            this.lbTop.TabIndex = 91;
-            this.lbTop.Text = "♫ | ♫";
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHelp.Image = global::ROE.Templates.Properties.Resources.ButtonHelpA2_01;
-            this.btnHelp.Location = new System.Drawing.Point(1093, 677);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(130, 116);
-            this.btnHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnHelp.TabIndex = 150;
-            this.btnHelp.TabStop = false;
-            // 
-            // picAlbum
-            // 
-            this.picAlbum.Location = new System.Drawing.Point(10, 23);
-            this.picAlbum.Name = "picAlbum";
-            this.picAlbum.Size = new System.Drawing.Size(136, 120);
-            this.picAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAlbum.TabIndex = 0;
-            this.picAlbum.TabStop = false;
             // 
             // btnBackward
             // 
@@ -252,6 +221,43 @@
             this.btnPlay.TabIndex = 1;
             this.btnPlay.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(62)))), ((int)(((byte)(50)))));
+            this.panel1.Controls.Add(this.lbTop);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1533, 31);
+            this.panel1.TabIndex = 146;
+            // 
+            // lbTop
+            // 
+            this.lbTop.AutoSize = true;
+            this.lbTop.BackColor = System.Drawing.Color.Transparent;
+            this.lbTop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTop.ForeColor = System.Drawing.Color.White;
+            this.lbTop.Location = new System.Drawing.Point(715, 2);
+            this.lbTop.Name = "lbTop";
+            this.lbTop.Size = new System.Drawing.Size(47, 21);
+            this.lbTop.TabIndex = 91;
+            this.lbTop.Text = "♫ | ♫";
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHelp.Image = global::ROE.Templates.Properties.Resources.ButtonHelpA2_01;
+            this.btnHelp.Location = new System.Drawing.Point(1093, 677);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(130, 116);
+            this.btnHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHelp.TabIndex = 150;
+            this.btnHelp.TabStop = false;
+            // 
+            // BackwardForward
+            // 
+            this.BackwardForward.Interval = 1;
+            // 
             // A2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,18 +275,18 @@
             this.Text = "A2";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBackward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +311,6 @@
         private System.Windows.Forms.PictureBox btnPlay;
         private System.Windows.Forms.Panel panel1;
         protected System.Windows.Forms.Label lbTop;
+        private System.Windows.Forms.Timer BackwardForward;
     }
 }
