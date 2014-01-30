@@ -28,36 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A1));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lbSing = new System.Windows.Forms.Label();
             this.lbAlbum = new System.Windows.Forms.Label();
             this.lbSong = new System.Windows.Forms.Label();
+            this.picAlbum = new System.Windows.Forms.PictureBox();
             this.lbTopic = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbTop = new System.Windows.Forms.Label();
-            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            this.btnHelp = new System.Windows.Forms.PictureBox();
-            this.picAlbum = new System.Windows.Forms.PictureBox();
             this.btnBackward = new System.Windows.Forms.PictureBox();
             this.btnForward = new System.Windows.Forms.PictureBox();
             this.btnPause = new System.Windows.Forms.PictureBox();
             this.btnStop = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbTop = new System.Windows.Forms.Label();
+            this.btnHelp = new System.Windows.Forms.PictureBox();
+            this.BackwardForward = new System.Windows.Forms.Timer(this.components);
+            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBackward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -68,7 +70,7 @@
             this.groupBox3.Controls.Add(this.lbSong);
             this.groupBox3.Controls.Add(this.picAlbum);
             this.groupBox3.Font = new System.Drawing.Font("AltamonteNF", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(78, 652);
+            this.groupBox3.Location = new System.Drawing.Point(78, 670);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(434, 149);
             this.groupBox3.TabIndex = 144;
@@ -108,6 +110,15 @@
             this.lbSong.TabIndex = 1;
             this.lbSong.Text = "\"Song\"";
             // 
+            // picAlbum
+            // 
+            this.picAlbum.Location = new System.Drawing.Point(10, 23);
+            this.picAlbum.Name = "picAlbum";
+            this.picAlbum.Size = new System.Drawing.Size(136, 120);
+            this.picAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAlbum.TabIndex = 0;
+            this.picAlbum.TabStop = false;
+            // 
             // lbTopic
             // 
             this.lbTopic.AutoSize = true;
@@ -130,7 +141,7 @@
             this.groupBox1.Controls.Add(this.btnStop);
             this.groupBox1.Controls.Add(this.btnPlay);
             this.groupBox1.Font = new System.Drawing.Font("AltamonteNF", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(31, 112);
+            this.groupBox1.Location = new System.Drawing.Point(31, 130);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(536, 508);
             this.groupBox1.TabIndex = 143;
@@ -145,6 +156,76 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(509, 341);
             this.panel2.TabIndex = 7;
+            // 
+            // btnBackward
+            // 
+            this.btnBackward.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBackward.Image = global::ROE.Templates.Properties.Resources.backward_blue_button_md;
+            this.btnBackward.Location = new System.Drawing.Point(111, 399);
+            this.btnBackward.Name = "btnBackward";
+            this.btnBackward.Size = new System.Drawing.Size(84, 76);
+            this.btnBackward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBackward.TabIndex = 6;
+            this.btnBackward.TabStop = false;
+            this.btnBackward.Click += new System.EventHandler(this.btnBackward_Click);
+            this.btnBackward.MouseEnter += new System.EventHandler(this.objeto_MouseEnter);
+            this.btnBackward.MouseLeave += new System.EventHandler(this.objeto_MouseLeave);
+            // 
+            // btnForward
+            // 
+            this.btnForward.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForward.Image = global::ROE.Templates.Properties.Resources.forward_blue_button_md;
+            this.btnForward.Location = new System.Drawing.Point(333, 399);
+            this.btnForward.Name = "btnForward";
+            this.btnForward.Size = new System.Drawing.Size(84, 76);
+            this.btnForward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnForward.TabIndex = 5;
+            this.btnForward.TabStop = false;
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
+            this.btnForward.MouseEnter += new System.EventHandler(this.objeto_MouseEnter);
+            this.btnForward.MouseLeave += new System.EventHandler(this.objeto_MouseLeave);
+            // 
+            // btnPause
+            // 
+            this.btnPause.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPause.Image = global::ROE.Templates.Properties.Resources.blue_pause_button_md;
+            this.btnPause.Location = new System.Drawing.Point(436, 398);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(84, 76);
+            this.btnPause.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPause.TabIndex = 3;
+            this.btnPause.TabStop = false;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            this.btnPause.MouseEnter += new System.EventHandler(this.objeto_MouseEnter);
+            this.btnPause.MouseLeave += new System.EventHandler(this.objeto_MouseLeave);
+            // 
+            // btnStop
+            // 
+            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStop.Image = global::ROE.Templates.Properties.Resources.blue_stop_button_md;
+            this.btnStop.Location = new System.Drawing.Point(6, 398);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(84, 76);
+            this.btnStop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnStop.TabIndex = 2;
+            this.btnStop.TabStop = false;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            this.btnStop.MouseEnter += new System.EventHandler(this.objeto_MouseEnter);
+            this.btnStop.MouseLeave += new System.EventHandler(this.objeto_MouseLeave);
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPlay.Image = global::ROE.Templates.Properties.Resources.blue_play_button_md;
+            this.btnPlay.Location = new System.Drawing.Point(223, 399);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(84, 76);
+            this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.TabStop = false;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            this.btnPlay.MouseEnter += new System.EventHandler(this.objeto_MouseEnter);
+            this.btnPlay.MouseLeave += new System.EventHandler(this.objeto_MouseLeave);
             // 
             // panel1
             // 
@@ -168,15 +249,6 @@
             this.lbTop.TabIndex = 91;
             this.lbTop.Text = "♫ | ♫";
             // 
-            // axShockwaveFlash1
-            // 
-            this.axShockwaveFlash1.Enabled = true;
-            this.axShockwaveFlash1.Location = new System.Drawing.Point(13, 15);
-            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
-            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
-            this.axShockwaveFlash1.Size = new System.Drawing.Size(481, 311);
-            this.axShockwaveFlash1.TabIndex = 0;
-            // 
             // btnHelp
             // 
             this.btnHelp.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -187,70 +259,22 @@
             this.btnHelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnHelp.TabIndex = 145;
             this.btnHelp.TabStop = false;
+            this.btnHelp.MouseEnter += new System.EventHandler(this.objeto_MouseEnter);
+            this.btnHelp.MouseLeave += new System.EventHandler(this.objeto_MouseLeave);
             // 
-            // picAlbum
+            // BackwardForward
             // 
-            this.picAlbum.Location = new System.Drawing.Point(10, 23);
-            this.picAlbum.Name = "picAlbum";
-            this.picAlbum.Size = new System.Drawing.Size(136, 120);
-            this.picAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAlbum.TabIndex = 0;
-            this.picAlbum.TabStop = false;
+            this.BackwardForward.Interval = 1;
+            this.BackwardForward.Tick += new System.EventHandler(this.BackwardForward_Tick);
             // 
-            // btnBackward
+            // axShockwaveFlash1
             // 
-            this.btnBackward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBackward.Image = global::ROE.Templates.Properties.Resources.backward_blue_button_md;
-            this.btnBackward.Location = new System.Drawing.Point(111, 399);
-            this.btnBackward.Name = "btnBackward";
-            this.btnBackward.Size = new System.Drawing.Size(84, 76);
-            this.btnBackward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnBackward.TabIndex = 6;
-            this.btnBackward.TabStop = false;
-            // 
-            // btnForward
-            // 
-            this.btnForward.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnForward.Image = global::ROE.Templates.Properties.Resources.forward_blue_button_md;
-            this.btnForward.Location = new System.Drawing.Point(333, 399);
-            this.btnForward.Name = "btnForward";
-            this.btnForward.Size = new System.Drawing.Size(84, 76);
-            this.btnForward.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnForward.TabIndex = 5;
-            this.btnForward.TabStop = false;
-            // 
-            // btnPause
-            // 
-            this.btnPause.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPause.Image = global::ROE.Templates.Properties.Resources.blue_pause_button_md;
-            this.btnPause.Location = new System.Drawing.Point(436, 398);
-            this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(84, 76);
-            this.btnPause.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnPause.TabIndex = 3;
-            this.btnPause.TabStop = false;
-            // 
-            // btnStop
-            // 
-            this.btnStop.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnStop.Image = global::ROE.Templates.Properties.Resources.blue_stop_button_md;
-            this.btnStop.Location = new System.Drawing.Point(6, 398);
-            this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(84, 76);
-            this.btnStop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnStop.TabIndex = 2;
-            this.btnStop.TabStop = false;
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPlay.Image = global::ROE.Templates.Properties.Resources.blue_play_button_md;
-            this.btnPlay.Location = new System.Drawing.Point(223, 399);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(84, 76);
-            this.btnPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnPlay.TabIndex = 1;
-            this.btnPlay.TabStop = false;
+            this.axShockwaveFlash1.Enabled = true;
+            this.axShockwaveFlash1.Location = new System.Drawing.Point(13, 15);
+            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
+            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
+            this.axShockwaveFlash1.Size = new System.Drawing.Size(481, 311);
+            this.axShockwaveFlash1.TabIndex = 0;
             // 
             // A1
             // 
@@ -269,18 +293,18 @@
             this.Text = "A1";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAlbum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBackward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnForward)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHelp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,8 +326,9 @@
         private System.Windows.Forms.PictureBox btnForward;
         private System.Windows.Forms.PictureBox btnPause;
         private System.Windows.Forms.PictureBox btnStop;
-        private System.Windows.Forms.PictureBox btnPlay;
         private System.Windows.Forms.Panel panel1;
         protected System.Windows.Forms.Label lbTop;
+        private System.Windows.Forms.Timer BackwardForward;
+        private System.Windows.Forms.PictureBox btnPlay;
     }
 }

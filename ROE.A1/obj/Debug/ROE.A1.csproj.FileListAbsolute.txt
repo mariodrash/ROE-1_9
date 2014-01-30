@@ -13,6 +13,21 @@ C:\ROE_1.9\ROE.1.9\ROE_1.9\ROE.A1\obj\Debug\ROE.A1.pdb
 C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.A1.exe.config
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.exe
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.pdb
+<<<<<<< HEAD
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.A1.exe.config
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.exe
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.pdb
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.A1.exe
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.A1.pdb
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Templates.dll
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Templates.pdb
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.csprojResolveAssemblyReference.cache
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Properties.Resources.resources
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.csproj.GenerateResource.Cache
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Wind_of_Change.resources
+=======
 C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.A1.exe
 C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.A1.pdb
 C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Templates.dll
@@ -22,3 +37,4 @@ C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Templates.pdb
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.csprojResolveAssemblyReference.cache
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Properties.Resources.resources
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.csproj.GenerateResource.Cache
+>>>>>>> 3889c1fe815ce385dcb34bcc5f121c1f19905904
