@@ -13,6 +13,7 @@ namespace ROE.Templates
     public partial class B1 : Form
     {
         private string videoPath;
+        private int idActividad;
 
         //Property to set or get the current video path.
         public string VideoPath
@@ -22,7 +23,10 @@ namespace ROE.Templates
         }
         private bool forward, rewind;
         protected int help, activity;
+        protected int _id;
 
+        
+        
 
         public B1()
         {
@@ -105,6 +109,8 @@ namespace ROE.Templates
         {
             etiqueta.Location = new Point((this.ClientSize.Width - etiqueta.Width) / 2, etiqueta.Location.Y);
         }
+
+        
 
     }
 }

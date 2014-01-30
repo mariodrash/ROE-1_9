@@ -5,9 +5,9 @@ C:\ROE_1.9\ROE-1_9\ROE.B1\bin\Debug\ROE.Templates.dll
 C:\ROE_1.9\ROE-1_9\ROE.B1\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
 C:\ROE_1.9\ROE-1_9\ROE.B1\bin\Debug\Interop.ShockwaveFlashObjects.dll
 C:\ROE_1.9\ROE-1_9\ROE.B1\bin\Debug\ROE.Templates.pdb
-C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.csprojResolveAssemblyReference.cache
 C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.Boulevard.resources
 C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.Properties.Resources.resources
 C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.csproj.GenerateResource.Cache
 C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.exe
 C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.pdb
+C:\ROE_1.9\ROE-1_9\ROE.B1\obj\Debug\ROE.B1.csprojResolveAssemblyReference.cache

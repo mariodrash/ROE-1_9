@@ -9,10 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
 namespace ROE.B1
 {
     public partial class Boulevard : ROE.Templates.B1
     {
+        
         public Boulevard()
         {
             InitializeComponent();
@@ -24,6 +26,11 @@ namespace ROE.B1
             lbSing.Text = "Singer: Green Day";
             lbAlbum.Text = "Album: American Idiot";
             picAlbum.ImageLocation = @"B1/Boulevard/american_idiot.jpg";
+        }
+
+        private void Boulevard_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

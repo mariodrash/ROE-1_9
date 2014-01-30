@@ -273,6 +273,16 @@ namespace ROE.Templates.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HelpB2_01 {
+            get {
+                object obj = ResourceManager.GetObject("HelpB2-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_pause_button_md {
             get {
                 object obj = ResourceManager.GetObject("red-pause-button-md", resourceCulture);

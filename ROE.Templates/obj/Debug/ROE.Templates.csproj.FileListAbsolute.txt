@@ -44,3 +44,5 @@ C:\ROE_1.9\ROE-1_9\ROE.Templates\obj\Debug\ROE.Templates.csproj.GenerateResource
 C:\ROE_1.9\ROE-1_9\ROE.Templates\obj\Debug\ROE.Templates.dll
 C:\ROE_1.9\ROE-1_9\ROE.Templates\obj\Debug\ROE.Templates.pdb
 >>>>>>> 3889c1fe815ce385dcb34bcc5f121c1f19905904
+C:\ROE_1.9\ROE-1_9\ROE.Templates\obj\Debug\ROE.Templates.csprojResolveAssemblyReference.cache
+C:\ROE_1.9\ROE-1_9\ROE.Templates\obj\Debug\ROE.Templates.B2.resources
