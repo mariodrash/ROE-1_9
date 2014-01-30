@@ -118,40 +118,76 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="backward-blue-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\backward-blue-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="red-stop-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\red-stop-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="red-play-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\red-play-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="blue-pause-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\blue-pause-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="red-pause-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\red-pause-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backward-red-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\backward-red-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ButtonHelpA1_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\ButtonHelpA1_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="black-play-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B2_GUI\black-play-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="blue-play-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\blue-play-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blue-stop-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\blue-stop-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ButtonHelpA1_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\ButtonHelpA1_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonHelpB1_On-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\ButtonHelpB1_On-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="forward-red-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\forward-red-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forward-blue-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\forward-blue-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="red-stop-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\red-stop-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="green-forward-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\green-forward-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonHelpA2-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\ButtonHelpA2-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="red-pause-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\red-pause-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backward-blue-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\backward-blue-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward-blue-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\forward-blue-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green-stop-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\green-stop-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="red-play-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\red-play-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green-backward-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\green-backward-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backward-red-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\backward-red-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green-pause-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\green-pause-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonHelpB1-01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\ButtonHelpB1-01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue-stop-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\blue-stop-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue-pause-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\blue-pause-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green-play-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B1_GUI\green-play-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-farward-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B2_GUI\black-farward-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-farward-button-md1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B2_GUI\black-farward-button-md1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-pause-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B2_GUI\black-pause-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="black-stop-button-md" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\B2_GUI\black-stop-button-md.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

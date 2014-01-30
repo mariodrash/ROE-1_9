@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROE.Templates", "ROE.Templa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROE.A1", "ROE.A1\ROE.A1.csproj", "{2F98F935-ECC3-43AC-99F2-5EE22211B44A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROE.B1", "ROE.B1\ROE.B1.csproj", "{64779B43-BB0A-466F-98D6-A3A3D6C8C85C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{2F98F935-ECC3-43AC-99F2-5EE22211B44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F98F935-ECC3-43AC-99F2-5EE22211B44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F98F935-ECC3-43AC-99F2-5EE22211B44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64779B43-BB0A-466F-98D6-A3A3D6C8C85C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64779B43-BB0A-466F-98D6-A3A3D6C8C85C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64779B43-BB0A-466F-98D6-A3A3D6C8C85C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64779B43-BB0A-466F-98D6-A3A3D6C8C85C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,5 +42,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6972AA1C-CB41-4E35-AB6B-8209AB901773} = {BA01A32F-6FFE-46F8-BCFD-658FAD6642D8}
 		{2F98F935-ECC3-43AC-99F2-5EE22211B44A} = {02D65A40-9208-4030-BC92-3662DF6428D3}
+		{64779B43-BB0A-466F-98D6-A3A3D6C8C85C} = {A9DAAA6B-84E6-4759-BA6A-818B5CF52302}
 	EndGlobalSection
 EndGlobal
