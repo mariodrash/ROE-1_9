@@ -38,3 +38,4 @@ C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.csprojResolveAssemblyReference.cache
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Properties.Resources.resources
 C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.csproj.GenerateResource.Cache
 >>>>>>> 3889c1fe815ce385dcb34bcc5f121c1f19905904
+C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.The_scientist.resources

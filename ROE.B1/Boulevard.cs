@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace ROE.B1
 {
     public partial class Boulevard : ROE.Templates.B1
