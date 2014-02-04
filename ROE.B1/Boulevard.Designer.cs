@@ -178,6 +178,7 @@
             this.answCombo_00.Name = "answCombo_00";
             this.answCombo_00.Size = new System.Drawing.Size(82, 22);
             this.answCombo_00.TabIndex = 3;
+            this.answCombo_00.SelectedIndexChanged += new System.EventHandler(this.option_SelectedIndexChanged);
             // 
             // lyricsPanelB
             // 
