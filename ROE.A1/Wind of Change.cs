@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ROE.Templates;
 using roe.Utilidades;
+using ROE.Libraries;
 
 namespace ROE.A1
 {
@@ -16,13 +17,10 @@ namespace ROE.A1
     {
        
         private string pathReproducir = Application.StartupPath + "/Wind";
-        int score = 0, help = 3, veces = 0, sumador = 0;
+        int score = 0, help = 3;
         private ArrayControles<TextBox>m_Text1;
-        private ArrayControles<PictureBox> m_PictureB;
-        private ArrayControles<Label> m_Label;
-        private ArrayControles<Label> m_Label2;
         private ArrayControles<TextBox> m_Textb2;
-        private ArrayControles<TextBox> m_Textb2_2;
+        private ArrayControles<Label> m_Label1;
         public Wind_of_Change()
         {
             InitializeComponent();
@@ -39,199 +37,29 @@ namespace ROE.A1
             picAlbum.ImageLocation = @"Wind/Wind.jpg";
         }
 
-        private void ayuda(int i, ref string palabra, ref bool act, ref bool act2 )
+        private void calificar(TextBox evaluated)
         {
-            classWind set = new classWind();
-            set.ayuda(i, ref palabra, ref help, act, act2);
-        }
-
-        private void btnHelp_Click(object sender, EventArgs e)
-        {
-            bool act;
-            bool act2 = false;
-            if (gbLyrics.Visible)
+            if (evaluated.Enabled)
             {
-                act = true;
-                for (int i = 0; i < m_Text1.Count; i++)
-                {
-                    if (m_Text1[i].Text.Equals(string.Empty))
-                    {
-                        string palabra = null;
-                        ayuda(i, ref palabra, ref act, ref act2);
-                        m_Text1[i].Text = palabra;
-                        break;
-                    }
-                }
+                evaluated.BackColor = Color.IndianRed;
+                evaluated.ForeColor = Color.White;
             }
             else
             {
-                act = false;
-                string palabra = null;
-                for (int i = 0; i < m_Textb2_2.Count; i++)
-                {
-                    if (i < 4)
-                    {
-                        act2 = true;
-                        if (m_Textb2[i].Text.Equals(string.Empty))
-                        {
-                            ayuda(i, ref palabra, ref act, ref act2);
-                            m_Textb2[i].Text = palabra;
-                            break;
-                        }
-                    }
-                    if (m_Textb2_2[i].Text.Equals(string.Empty))
-                    {
-                        for (int s = 0; s < m_PictureB.Count; s++)
-                        {
-                            if (m_PictureB[i].ImageLocation == @"Wind/wind" + s + ".png")
-                            {
-                                act2 = false;
-                                ayuda(s, ref palabra, ref act, ref act2);
-                                m_Textb2_2[i].Text = palabra;
-                                break;
-                            }
-                        }
-                        break;
-                    }
-                }
+                evaluated.BackColor = Color.YellowGreen;
+                evaluated.ForeColor = Color.Black;
             }
-        }
-
-        private void aleatorio()
-        {
-            label14.Text = "" + veces++;
-            Random ran = new Random();
-            int cargar = ran.Next(6);
-            if (sumador < m_PictureB.Count)
-            {
-                Random(cargar);
-            }
-        }
-
-        private void Random(int cargar)
-        {
-            label14.Text = "" + veces++;
-            bool act = false;
-            for (int i = 0; i < m_PictureB.Count; i++)
-            {
-                if ((m_PictureB[i].ImageLocation == @"Wind/wind" + cargar + ".png"))
-                {
-                    aleatorio();
-                    act = true;
-                    break;
-                }
-            }
-            if (m_PictureB[sumador].ImageLocation == null && act.Equals(false))
-            {
-                m_PictureB[sumador].ImageLocation = @"Wind/wind" + cargar + ".png";
-                sumador++;
-                if (sumador.Equals(6))
-                {
-                    sumador = 0;
-                }
-                else
-                {
-                    aleatorio();
-                }
-            }
-        }
-
-        private void TextBox_Textchanged(object sender, EventArgs e)
-        {
-            TextBox objeto = (TextBox)sender;
-            for (int i = 0; i < m_Text1.Count; i++)
-            {
-                if (objeto.Name.Equals(m_Text1[i].Name))
-                {
-                    int x = i;
-                    string palabra = m_Text1[i].Text.ToLower();
-                    bool bien = false;
-                    classWind set = new classWind();
-                    set.evaluarPrimero(x,palabra, ref bien, ref score);
-                    if (bien)
-                    {
-                        m_Text1[i].BackColor = Color.YellowGreen;
-                        m_Text1[i].ForeColor = Color.Black;
-                        m_Text1[i].Enabled = false;
-                    }
-                    else
-                    {
-                        m_Text1[i].BackColor = Color.IndianRed;
-                        m_Text1[i].ForeColor = Color.White;
-                    }
-                    break;
-                }
-            }
-            if (score.Equals(80))
+            if (score.Equals(80) && gbLyrics.Visible)
             {
                 general set = new general();
                 set.nextActivity(ref score, ref help);
                 gbLyrics.Hide();
                 gbActivity.Show();
-                lbDirections.Text = "Match the words in gray with the correct definition and with the correct picture";
+                lbDirections.Text = "Match the words with the correct definition and with the correct picture";
                 lbDirections.Left = (panel7.Width - lbDirections.Width) / 2;
+                AnswersROE.Id = "56.1";
             }
-        }
-
-        private void TextBox_Textchanged2(object sender, EventArgs e)
-        {
-            TextBox objeto = (TextBox)sender;
-            for (int i = 0; i < m_Textb2_2.Count; i++)
-            {
-                if ( i< 4)
-                {
-                    if (objeto.Name.Equals(m_Textb2[i].Name))
-                    {
-                        int x = i;
-                        string palabra = m_Textb2[i].Text.ToLower();
-                        bool bien = true;
-
-                        classWind set = new classWind();
-                        set.evaluarPrimero(x, palabra, ref bien, ref score);
-                        if (bien)
-                        {
-                            m_Textb2[i].BackColor = Color.YellowGreen;
-                            m_Textb2[i].ForeColor = Color.Black;
-                            m_Textb2[i].Enabled = false;
-                        }
-                        else
-                        {
-                            m_Textb2[i].BackColor = Color.IndianRed;
-                            m_Textb2[i].ForeColor = Color.White;
-                        }
-                        break;
-                    }
-                }
-                if (objeto.Name.Equals(m_Textb2_2[i].Name) )
-                {
-                    int x = i;
-                    string palabra = m_Textb2_2[i].Text.ToLower();
-                    bool bien = true;
-                    for (int s = 0; s < m_PictureB.Count; s++)
-                    {
-                        if (m_PictureB[i].ImageLocation == @"Wind/wind" + s + ".png")
-                        {
-                            classWind set = new classWind();
-                            set.evaluarPrimero(s, palabra, ref bien, ref score);
-                            if (bien)
-                            {
-                                m_Textb2_2[i].BackColor = Color.YellowGreen;
-                                m_Textb2_2[i].ForeColor = Color.Black;
-                                m_Textb2_2[i].Enabled = false;
-                            }
-                            else
-                            {
-                                m_Textb2_2[i].BackColor = Color.IndianRed;
-                                m_Textb2_2[i].ForeColor = Color.White;
-                            }
-                            break;
-                        }
-                    }
-                }
-
-            }
-
-            if (score.Equals(100))
+            else if (score.Equals(100))
             {
                 bool resp = false;
                 general set = new general();
@@ -242,22 +70,40 @@ namespace ROE.A1
                     again.Show();
                     this.Hide();
                 }
-
             }
+        }
+
+        private void hideLabel()
+        {
+            for (int i = 0; i < m_Textb2.Count; i++)
+            {
+                if (m_Textb2[i].Enabled.Equals(false) && m_Label1[i].Visible)
+                {
+                    m_Label1[i].Hide();
+                    break;
+                }
+            }
+        }
+
+        private void option_TextChanged(object sender, EventArgs e)
+        {
+            TextBox evaluated = (TextBox)sender;
+            int idText = AnswersROE.ObtenerIndex(evaluated.Name);
+            AnswersROE.EvaluateTextbox(ref evaluated, idText, ref score);
+            calificar(evaluated);
+            hideLabel();
+           
         }
 
         private void Wind_of_Change_Load(object sender, EventArgs e)
         {
+            AnswersROE.Id = "56.0";
             m_Text1 = new ArrayControles<TextBox>("textBox", this);
-            m_PictureB = new ArrayControles<PictureBox>("Picture2B", this);
-            m_Label = new ArrayControles<Label>("Lab1", this);
-            m_Label2 = new ArrayControles<Label>("Lab2", this);
-            m_Textb2 = new ArrayControles<TextBox>("Textb2", this);
-            m_Textb2_2 = new ArrayControles<TextBox>("Text2B", this);
+            m_Textb2 = new ArrayControles<TextBox>("TextB2", this);
+            m_Label1 = new ArrayControles<Label>("Labe2", this);
             label14.Hide();
             gbActivity.Hide();
             timer1.Start();
-            aleatorio();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -282,6 +128,35 @@ namespace ROE.A1
                 else
                 {
                     lbDirections.ForeColor = Color.White;
+                }
+            }
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            string palabra = null;
+            if (gbLyrics.Visible)
+            {
+                for (int i = 0; i < m_Text1.Count; i++)
+                {
+                    if (m_Text1[i].BackColor != Color.YellowGreen)
+                    {
+                        AnswersROE.ayuda(ref palabra, i, ref help);
+                        m_Text1[i].Text = palabra;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < m_Textb2.Count; i++)
+                {
+                    if (m_Textb2[i].BackColor != Color.YellowGreen)
+                    {
+                        AnswersROE.ayuda(ref palabra, i, ref help);
+                        m_Textb2[i].Text = palabra;
+                        break;
+                    }
                 }
             }
         }

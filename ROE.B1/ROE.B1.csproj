@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ROE.Libraries">
+      <HintPath>..\ROE.Libraries\bin\Debug\ROE.Libraries.dll</HintPath>
+    </Reference>
     <Reference Include="ROE.Templates">
       <HintPath>..\ROE.Templates\bin\Debug\ROE.Templates.dll</HintPath>
     </Reference>

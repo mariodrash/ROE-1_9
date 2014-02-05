@@ -16,7 +16,7 @@ namespace ROE.A1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Wind_of_Change());
+            Application.Run(new Wonderful_tonight());
         }
     }
 }

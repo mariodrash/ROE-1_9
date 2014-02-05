@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayControles.cs" />
-    <Compile Include="classWind.cs" />
     <Compile Include="general.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +62,12 @@
     </Compile>
     <Compile Include="Wind of Change.Designer.cs">
       <DependentUpon>Wind of Change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wonderful tonight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wonderful tonight.Designer.cs">
+      <DependentUpon>Wonderful tonight.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +85,9 @@
     <EmbeddedResource Include="Wind of Change.resx">
       <DependentUpon>Wind of Change.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Wonderful tonight.resx">
+      <DependentUpon>Wonderful tonight.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,6 +102,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ROE.Libraries\ROE.Libraries.csproj">
+      <Project>{aa3ccaa9-316e-410c-88c7-51735b3042c6}</Project>
+      <Name>ROE.Libraries</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ROE.Templates\ROE.Templates.csproj">
       <Project>{6972aa1c-cb41-4e35-ab6b-8209ab901773}</Project>
       <Name>ROE.Templates %28ROE.Templates\ROE.Templates%29</Name>
@@ -101,6 +113,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Wind\Wind.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wind\wind0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wind\wind1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wind\wind2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wind\wind3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wind\wind4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Wind\wind5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
