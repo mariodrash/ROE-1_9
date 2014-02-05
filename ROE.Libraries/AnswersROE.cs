@@ -11,6 +11,10 @@ namespace ROE.Libraries
     {
         static string[] answer_01 = { "lonely", "empty", "broken", "besides", "down", "between" };
         static string[] arrayUtilizado;
+        static string[] resWind1 = { "night", "future", "the moment", "tomorrow", "the past", "the moment", "tomorrow", "time" };
+        static string[] resWind2 = { "night", "the moment", "tomorrow", "time", "evening", "time", "tomorrow", "afternoon", "morning", "the moment"};
+        static string[] resScientist = { "come", "meet", "tell", "know", "find", "need", "set", "ask", "let", "go", "start", "take", "speak", "love", "haunt" };
+        static string[] resWonderful = { };
         static string id;
         public static string Id
         {
@@ -26,14 +30,29 @@ namespace ROE.Libraries
 
         public static void AsignaArray(string identificador)
         {
-
-
             switch (identificador)
             {
                 case "1.0":
                     arrayUtilizado = (string[])answer_01.Clone();
                     MessageBox.Show(arrayUtilizado[0]);
                     break;
+
+                case "46.0":
+                    arrayUtilizado = (string[])resScientist.Clone();
+                    break;
+
+                case "56.0":
+                    arrayUtilizado = (string[])resWind1.Clone();
+                    break;
+
+                case "56.1":
+                    arrayUtilizado = (string[])resWind2.Clone();
+                    break;
+
+                case "57.0":
+                    arrayUtilizado = (string[])resWonderful.Clone();
+                    break;
+
                 default:                    
                     break;
             }
@@ -57,12 +76,28 @@ namespace ROE.Libraries
             }
         }
 
-        public static void Evaluate(ComboBox control, int index)
+        public static void Evaluate(ComboBox control, int index, ref int score)
         {
             if (control.Text.ToLower() == arrayUtilizado[index])
             {
                 control.Enabled = false;
+                score += 10;
             }
+        }
+
+        public static void EvaluateTextbox(ref TextBox control, int index, ref int score)
+        {
+            if (control.Text.ToLower() == arrayUtilizado[index])
+            {
+                control.Enabled = false;
+                score += 10;
+            }
+        }
+
+        public static void ayuda(ref string palabra, int index, ref int ayuda)
+        {
+            palabra = arrayUtilizado[index];
+            ayuda--;
         }
     }
 }
