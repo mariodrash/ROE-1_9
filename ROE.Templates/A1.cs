@@ -24,8 +24,6 @@ namespace ROE.Templates
         {
             InitializeComponent();
             string video = Application.StartupPath;
-            lbTop.Left = (ClientSize.Width - lbTop.Width) / 2;
-            lbTopic.Left = (ClientSize.Width - lbTopic.Width) / 2;
         }
 
         private void ForwardBackwardMetodo()
@@ -103,6 +101,11 @@ namespace ROE.Templates
                     this.axShockwaveFlash1.Forward();
                 }
             }
+        }
+
+        protected void CenterTopic(Label etiqueta)
+        {
+            etiqueta.Left = (ClientSize.Width - etiqueta.Width) / 2;
         }
     }
 }

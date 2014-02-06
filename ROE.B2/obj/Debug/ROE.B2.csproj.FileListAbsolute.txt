@@ -10,3 +10,15 @@ C:\ROE_1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.Properties.Resources.resources
 C:\ROE_1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.csproj.GenerateResource.Cache
 C:\ROE_1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.exe
 C:\ROE_1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.pdb
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\ROE.B2.exe.config
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\ROE.B2.exe
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\ROE.B2.pdb
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\ROE.Templates.dll
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\Interop.ShockwaveFlashObjects.dll
+C:\ROE.1.9\ROE-1_9\ROE.B2\bin\Debug\ROE.Templates.pdb
+C:\ROE.1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.csprojResolveAssemblyReference.cache
+C:\ROE.1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.Properties.Resources.resources
+C:\ROE.1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.csproj.GenerateResource.Cache
+C:\ROE.1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.exe
+C:\ROE.1.9\ROE-1_9\ROE.B2\obj\Debug\ROE.B2.pdb

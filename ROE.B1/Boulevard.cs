@@ -10,17 +10,17 @@ using System.Windows.Forms;
 using ROE.Libraries;
 
 
-
 namespace ROE.B1
 {
     public partial class Boulevard : ROE.Templates.B1
     {
-        
+        int score = 0;
         public Boulevard()
         {
             InitializeComponent();
             topicLabel.Text = "PREPOSITIONS OF PLACE";
             barTitle.Text = "♫ Boulevard of broken dreams | Green Day ♫";
+            
             CenterTopic(topicLabel);
             CenterTopic(barTitle);
             lbSong.Text = "\"Boulevard of broken dreams\"";
@@ -38,7 +38,7 @@ namespace ROE.B1
         {
             ComboBox evaluated = (ComboBox)sender;
             int idCombo = AnswersROE.ObtenerIndex(evaluated.Name);
-            AnswersROE.Evaluate(evaluated, idCombo);
+            AnswersROE.Evaluate(evaluated, idCombo, ref score);
         }
     }
 }
