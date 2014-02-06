@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayControles.cs" />
     <Compile Include="Boulevard.cs">
       <SubType>Form</SubType>
     </Compile>

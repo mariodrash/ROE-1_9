@@ -22,6 +22,7 @@ namespace ROE.Templates
             set { videoPath = value; }
         }
         private bool forward, rewind;
+        protected int score;
         protected int help, activity;
         protected int _id;
 

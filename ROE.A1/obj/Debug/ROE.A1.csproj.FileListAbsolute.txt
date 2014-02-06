@@ -44,3 +44,7 @@ C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Wind_of_Change.resources
 C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Libraries.dll
 C:\ROE.1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Libraries.pdb
 C:\ROE.1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Wonderful_tonight.resources
+C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Libraries.dll
+C:\ROE_1.9\ROE-1_9\ROE.A1\bin\Debug\ROE.Libraries.pdb
+C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.The_scientist.resources
+C:\ROE_1.9\ROE-1_9\ROE.A1\obj\Debug\ROE.A1.Wonderful_tonight.resources

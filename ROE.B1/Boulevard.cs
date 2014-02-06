@@ -8,13 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ROE.Libraries;
+using roe.Utilidades;
 
 
 namespace ROE.B1
 {
     public partial class Boulevard : ROE.Templates.B1
     {
-        int score = 0;
+        private ArrayControles<ComboBox> m_comboBoxes;
+
         public Boulevard()
         {
             InitializeComponent();
@@ -32,13 +34,31 @@ namespace ROE.B1
         private void Boulevard_Load(object sender, EventArgs e)
         {
             AnswersROE.Id = "1.0";
+            score = 0;
+            m_comboBoxes = new ArrayControles<ComboBox>("answCombo", this);
+            AnswersROE.Revolver();
+
+            for (int i = 0; i < m_comboBoxes.Count; i++)
+            {
+                string option = AnswersROE.MostrarElemento();
+                foreach (var element in m_comboBoxes)
+                {
+                    element.Items.Add(option);
+                }
+            }
+            
         }
 
         private void option_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             ComboBox evaluated = (ComboBox)sender;
             int idCombo = AnswersROE.ObtenerIndex(evaluated.Name);
             AnswersROE.Evaluate(evaluated, idCombo, ref score);
+            //for (int i = 0; i < m_comboBoxes; i++)
+            //{
+                
+            //}
         }
     }
 }

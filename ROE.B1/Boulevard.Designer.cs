@@ -82,13 +82,6 @@
             this.answCombo_05.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.answCombo_05.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answCombo_05.FormattingEnabled = true;
-            this.answCombo_05.Items.AddRange(new object[] {
-            "EMPTY",
-            "BESIDE",
-            "LONELY",
-            "BROKEN",
-            "DOWN",
-            "BETWEEN"});
             this.answCombo_05.Location = new System.Drawing.Point(616, 14);
             this.answCombo_05.Name = "answCombo_05";
             this.answCombo_05.Size = new System.Drawing.Size(82, 22);
@@ -116,13 +109,6 @@
             this.answCombo_03.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.answCombo_03.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answCombo_03.FormattingEnabled = true;
-            this.answCombo_03.Items.AddRange(new object[] {
-            "EMPTY",
-            "BESIDE",
-            "LONELY",
-            "BROKEN",
-            "DOWN",
-            "BETWEEN"});
             this.answCombo_03.Location = new System.Drawing.Point(322, 244);
             this.answCombo_03.Name = "answCombo_03";
             this.answCombo_03.Size = new System.Drawing.Size(82, 22);
@@ -133,13 +119,6 @@
             this.answCombo_02.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.answCombo_02.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answCombo_02.FormattingEnabled = true;
-            this.answCombo_02.Items.AddRange(new object[] {
-            "EMPTY",
-            "BESIDE",
-            "LONELY",
-            "BROKEN",
-            "DOWN",
-            "BETWEEN"});
             this.answCombo_02.Location = new System.Drawing.Point(237, 151);
             this.answCombo_02.Name = "answCombo_02";
             this.answCombo_02.Size = new System.Drawing.Size(82, 22);
@@ -150,13 +129,6 @@
             this.answCombo_01.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.answCombo_01.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answCombo_01.FormattingEnabled = true;
-            this.answCombo_01.Items.AddRange(new object[] {
-            "EMPTY",
-            "BESIDE",
-            "LONELY",
-            "BROKEN",
-            "DOWN",
-            "BETWEEN"});
             this.answCombo_01.Location = new System.Drawing.Point(199, 128);
             this.answCombo_01.Name = "answCombo_01";
             this.answCombo_01.Size = new System.Drawing.Size(82, 22);
@@ -167,13 +139,6 @@
             this.answCombo_00.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.answCombo_00.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answCombo_00.FormattingEnabled = true;
-            this.answCombo_00.Items.AddRange(new object[] {
-            "EMPTY",
-            "BESIDE",
-            "LONELY",
-            "BROKEN",
-            "DOWN",
-            "BETWEEN"});
             this.answCombo_00.Location = new System.Drawing.Point(194, 14);
             this.answCombo_00.Name = "answCombo_00";
             this.answCombo_00.Size = new System.Drawing.Size(82, 22);

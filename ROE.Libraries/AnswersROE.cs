@@ -8,13 +8,22 @@ using System.Windows.Forms;
 namespace ROE.Libraries
 {
     public static class AnswersROE
-    {
+    {        
         static string[] answer_01 = { "lonely", "empty", "broken", "besides", "down", "between" };
         static string[] arrayUtilizado;
+
+
         static string[] resWind1 = { "night", "future", "the moment", "tomorrow", "the past", "the moment", "tomorrow", "time" };
         static string[] resWind2 = { "night", "the moment", "tomorrow", "time", "evening", "time", "tomorrow", "afternoon", "morning", "the moment"};
         static string[] resScientist = { "come", "meet", "tell", "know", "find", "need", "set", "ask", "let", "go", "start", "take", "speak", "love", "haunt" };
         static string[] resWonderful = { };
+
+        static string[] arrayGenerico;
+        static Random alAzar = new Random();
+        static int idActual;
+
+           
+
         static string id;
         public static string Id
         {
@@ -80,8 +89,8 @@ namespace ROE.Libraries
         {
             if (control.Text.ToLower() == arrayUtilizado[index])
             {
-                control.Enabled = false;
-                score += 10;
+                control.Enabled = false;                
+                score += 10;                
             }
         }
 
@@ -98,6 +107,33 @@ namespace ROE.Libraries
         {
             palabra = arrayUtilizado[index];
             ayuda--;
+        }
+
+        //Method to mix answers and show them in an array
+        public static void Revolver()
+        {
+            idActual = 0;
+            //if(arrayGenerico.Length > 0)
+            //    Array.Clear(arrayGenerico,0,arrayGenerico.Length);
+
+             arrayGenerico = (string [])arrayUtilizado.Clone();
+
+            for (int first = 0; first < arrayGenerico.Length; first++)
+            {
+                int second = alAzar.Next(arrayGenerico.Length);
+
+                string auxiliar = arrayGenerico[first];
+                arrayGenerico[first] = arrayGenerico[second];
+                arrayGenerico[second] = auxiliar;
+            }
+        }
+
+        public static string MostrarElemento()
+        {
+            if (idActual < arrayGenerico.GetLength(0))
+                return arrayGenerico[idActual++];
+            else
+                return null;
         }
     }
 }

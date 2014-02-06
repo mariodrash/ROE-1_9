@@ -7,3 +7,4 @@ C:\ROE.1.9\ROE-1_9\ROE.Libraries\bin\Debug\ROE.Libraries.pdb
 C:\ROE.1.9\ROE-1_9\ROE.Libraries\obj\Debug\ROE.Libraries.dll
 C:\ROE.1.9\ROE-1_9\ROE.Libraries\obj\Debug\ROE.Libraries.pdb
 C:\ROE.1.9\ROE-1_9\ROE.Libraries\obj\Debug\ROE.Libraries.csprojResolveAssemblyReference.cache
+C:\ROE_1.9\ROE-1_9\ROE.Libraries\obj\Debug\ROE.Libraries.csprojResolveAssemblyReference.cache
