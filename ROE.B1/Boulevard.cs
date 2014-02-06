@@ -55,10 +55,17 @@ namespace ROE.B1
             ComboBox evaluated = (ComboBox)sender;
             int idCombo = AnswersROE.ObtenerIndex(evaluated.Name);
             AnswersROE.Evaluate(evaluated, idCombo, ref score);
-            //for (int i = 0; i < m_comboBoxes; i++)
+            if (score == m_comboBoxes.Count * 10)
+                MessageBox.Show("");
+            //for (int i = 0; i < m_comboBoxes.Count; i++)
             //{
-                
+
             //}
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -48,6 +48,7 @@
             // btnHelp
             // 
             this.btnHelp.Location = new System.Drawing.Point(983, 684);
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // lyricsGroup
             // 
